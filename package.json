@@ -1,0 +1,12 @@
+{
+    "name": "projet-flo",
+    "version": "1.0.0",
+    "description": "Projet-flo",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./asset/sass/main.scss:./asset/public/style.css"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
