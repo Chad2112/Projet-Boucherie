@@ -42,10 +42,16 @@ for (i = 0; i < btn.length; i++) {
   indexStorage();
   function changeColorBtn() {
     allBtn.style.border = "3px solid green";
+    allBtn.style.boxShadow = "1px 1px 23px 3px rgb(0, 0, 0, 0.5) ";
+    allBtn.style.transform = "scale(1.1)";
+
     return true;
   }
   function changeColorBtn2() {
     allBtn.style.border = "2px solid black";
+    allBtn.style.boxShadow = "0px 1px 33px 8px rgb(0, 0, 0, 0.22)";
+    allBtn.style.transform = "scale(1)";
+
     return false;
   }
   allBtn.addEventListener("click", () => {

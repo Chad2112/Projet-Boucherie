@@ -15,12 +15,22 @@ align-items: center;
     font-size: 40px;
     margin: 0;
     width: 100%;
-    height: 100px;
+    height: 11%;
     display: flex;
 align-items: center;
     justify-content: center;
+
+    &--viande {
+        height: 4.5%;
+    }
+
+    &--accompagnements {
+        height: 14%;
+    }
 }
 
 .presentation {
-    margin: 0% 10% 0% 10%;
+    margin: 3% 10% 4% 10%;
 }
+
+

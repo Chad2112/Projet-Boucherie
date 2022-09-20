@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 2% 0%;
   &__link {
     height: 400px;
     width: 27%;
@@ -31,7 +32,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: 1200px;
+  &--viande {
+    height: 1650px;
+  }
+
+  &--accompagnements {
+    height: 750px;
+  }
+
+  &--paella {
+    height: 700px;
+  }
 
 
   &__content {
@@ -44,33 +56,56 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    &--viande {
+        height: 19%;
+    
+    }
+
+    &--accompagnements {
+      height: 80%;
+    width: 100%;
+    }
+
+    &--paella {
+      height: 74%;
+      width: 47%;
+      justify-content: space-around;
+      flex-direction: row
+    }
+
     &__btn {
       @include btnTraiteur;
       border-radius: 40px 40px 40px 40px;
       margin: 15px 0px 15px 0px;
       -webkit-box-shadow: 0px 1px 33px 8px rgba(0,0,0,0.56); 
       box-shadow: 0px 1px 33px 8px rgba(0,0,0,0.22);
+      transition: all 1s ease-in-out;
+
     }
     &__textcontent {
       width: 75%;
-
       display: flex;
+      height: 100%;
       justify-content: center;
-
       flex-direction: column;
+      align-items: center;
 
       p {
-        margin: 0;
+        margin: 0px 0px 0px 7%;
+        font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
       }
     }
     &__com {
-      font-size: 20px;
-      font-weight: 100;
-      height: 20%;
-      width: 100%;
+      font-size: 16px;
+    font-weight: 100;
+    height: 40%;
+    width: 100%;
     }
     &__text {
-      height: 35%;
+      height: 46%;
       width: 100%;
     }
   }
