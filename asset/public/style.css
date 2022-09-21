@@ -150,7 +150,7 @@ li {
   padding: 2% 0%;
 }
 .allcard__link {
-  height: 400px;
+  height: 87.5%;
   width: 27%;
   background: rgb(28, 57, 99);
   background: radial-gradient(circle, rgb(47, 97, 166) 0%, rgb(0, 0, 0) 100%);
@@ -271,6 +271,17 @@ li {
   }
   100% {
     transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slidmobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+    visibility: visible;
     opacity: 1;
   }
 }

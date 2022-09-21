@@ -10,6 +10,18 @@
             opacity: 1;
     }
 }
+@keyframes slidmobile{
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    
+    100% {
+        transform: translateX(0px);
+           visibility: visible;
+            opacity: 1;
+    }
+}
 @keyframes notslid{
     0% {
         opacity: 0;
