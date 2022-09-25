@@ -7,7 +7,7 @@
   align-items: center;
   padding: 2% 0%;
   &__link {
-    height: 31%;
+    height: 80%;
     width: 27%;
     background: rgb(28, 57, 99);
     background: radial-gradient(circle, rgb(47, 97, 166) 0%, rgba(0, 0, 0, 1) 100%);
@@ -22,6 +22,10 @@
     }
   }
 }
+
+.animation {
+  height: 30%;
+}
 .allcardmodifier {
   flex-wrap: wrap;
   height: 1400px;
@@ -33,6 +37,10 @@
   justify-content: center;
   align-items: center;
   height: 1200px;
+  background-color: rgb(255, 255, 255);
+
+
+
   &--viande {
     height: 1650px;
   }
@@ -49,12 +57,16 @@
   &__content {
     height: 38%;
     width: 80%;
+    border-radius: 1000px 1000px;
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+ 
+
 
     &--viande {
         height: 19%;
@@ -80,6 +92,13 @@
       -webkit-box-shadow: 0px 1px 33px 8px rgba(0,0,0,0.56); 
       box-shadow: 0px 1px 33px 8px rgba(0,0,0,0.22);
       transition: all 1s ease-in-out;
+      background: rgb(28,57,99);
+      background: radial-gradient(circle, rgba(28,57,99,1) 0%, rgba(0,0,0,1) 100%);
+      color: white;
+
+      &--fondues {
+        height: 220px;
+      }
 
     }
     &__textcontent {
@@ -121,7 +140,7 @@
     animation: margin 2.5s ease-in-out 0s 1 normal forwards;
 
 }
-.animation:nth-child(0n+7) {
+.animation:nth-child(0n+8) {
     animation: notslid 2.5s ease-in-out 0s 1 normal forwards;
 
 }

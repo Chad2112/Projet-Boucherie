@@ -40,34 +40,29 @@ li {
 .header {
   height: 361px;
   width: 100%;
-  background: rgb(28, 57, 99);
-  background: radial-gradient(circle, rgb(28, 57, 99) 0%, rgb(0, 0, 0) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: rgb(28, 57, 99);
+  background: radial-gradient(circle, rgb(47, 97, 166) 0%, rgb(0, 0, 0) 100%);
 }
-
 .header__nav {
   width: 100%;
 }
-
 .header__nav__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .header__nav__list__item {
   list-style-type: none;
   color: white;
 }
-
 .header__nav {
   width: 100%;
   margin-top: 1%;
 }
-
 .header__nav__list {
   display: flex;
   justify-content: space-around;
@@ -75,7 +70,6 @@ li {
   width: 100%;
   padding: 0;
 }
-
 .header__nav__list a {
   text-decoration: none;
   color: white;
@@ -85,30 +79,25 @@ li {
 .footer {
   height: 285px;
   width: 100%;
-  background-color: black;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: rgb(28, 57, 99);
-  background: radial-gradient(circle, rgb(28, 57, 99) 0%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(47, 97, 166) 0%, rgb(0, 0, 0) 100%);
 }
-
 .footer__alllist {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
-
 .footer__list {
   font-size: 20px;
   margin-top: 3%;
 }
-
 .footer__list a {
   color: rgb(138, 136, 136);
 }
-
 .footer__title {
   font-size: 35px;
   margin: 0;
@@ -139,11 +128,9 @@ li {
   align-items: center;
   justify-content: center;
 }
-
 .menu__title--viande {
   height: 4.5%;
 }
-
 .menu__title--accompagnements {
   height: 14%;
 }
@@ -161,23 +148,24 @@ li {
   align-items: center;
   padding: 2% 0%;
 }
-
 .allcard__link {
-  height: 400px;
+  height: 80%;
   width: 27%;
   background: rgb(28, 57, 99);
   background: radial-gradient(circle, rgb(47, 97, 166) 0%, rgb(0, 0, 0) 100%);
   border-radius: 10%;
   text-decoration: none;
 }
-
 .allcard__link__boxImg {
   width: 100%;
   height: 75%;
 }
-
 .allcard__link__text {
   color: rgb(255, 255, 255);
+}
+
+.animation {
+  height: 30%;
 }
 
 .allcardmodifier {
@@ -191,47 +179,42 @@ li {
   justify-content: center;
   align-items: center;
   height: 1200px;
+  background-color: rgb(255, 255, 255);
 }
-
 .menu--viande {
   height: 1650px;
 }
-
 .menu--accompagnements {
   height: 750px;
 }
-
 .menu--paella {
   height: 700px;
 }
-
 .menu__content {
   height: 38%;
   width: 80%;
+  border-radius: 1000px 1000px;
   display: flex;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
 }
-
 .menu__content--viande {
   height: 19%;
 }
-
 .menu__content--accompagnements {
   height: 80%;
   width: 100%;
 }
-
 .menu__content--paella {
   height: 74%;
   width: 47%;
   justify-content: space-around;
   flex-direction: row;
 }
-
 .menu__content__btn {
   height: 105px;
   width: 398px;
@@ -248,8 +231,13 @@ li {
   -webkit-box-shadow: 0px 1px 33px 8px rgba(0, 0, 0, 0.56);
   box-shadow: 0px 1px 33px 8px rgba(0, 0, 0, 0.22);
   transition: all 1s ease-in-out;
+  background: rgb(28, 57, 99);
+  background: radial-gradient(circle, rgb(28, 57, 99) 0%, rgb(0, 0, 0) 100%);
+  color: white;
 }
-
+.menu__content__btn--fondues {
+  height: 220px;
+}
 .menu__content__textcontent {
   width: 75%;
   display: flex;
@@ -258,7 +246,6 @@ li {
   flex-direction: column;
   align-items: center;
 }
-
 .menu__content__textcontent p {
   margin: 0px 0px 0px 7%;
   font-size: 17px;
@@ -266,14 +253,12 @@ li {
   justify-content: center;
   align-items: center;
 }
-
 .menu__content__com {
   font-size: 16px;
   font-weight: 100;
   height: 40%;
   width: 100%;
 }
-
 .menu__content__text {
   height: 46%;
   width: 100%;
@@ -287,7 +272,7 @@ li {
   animation: margin 2.5s ease-in-out 0s 1 normal forwards;
 }
 
-.animation:nth-child(0n+7) {
+.animation:nth-child(0n+8) {
   animation: notslid 2.5s ease-in-out 0s 1 normal forwards;
 }
 
@@ -296,44 +281,37 @@ li {
     opacity: 0;
     transform: translateX(-2000px);
   }
-
   100% {
     transform: translateX(0px);
     opacity: 1;
   }
 }
-
 @keyframes slidmobile {
   0% {
     opacity: 0;
     transform: translateX(-500px);
   }
-
   100% {
     transform: translateX(0px);
     visibility: visible;
     opacity: 1;
   }
 }
-
 @keyframes notslid {
   0% {
     opacity: 0;
     transform: translateX(2000px);
   }
-
   100% {
     transform: translateX(0px);
     opacity: 1;
   }
 }
-
 @keyframes margin {
   0% {
     opacity: 0;
     transform: translateY(-1000px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0px);
